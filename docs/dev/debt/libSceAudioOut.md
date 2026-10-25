@@ -36,9 +36,8 @@
 - [sceAudioOutOpenEx](../../../core/libs/prx/libSceAudioOut/src/Unimplemented.cpp) (libSceAudioOut) - unknown signature
 - [sceAudioOutSetSystemDebugState](../../../core/libs/prx/libSceAudioOut/src/Unimplemented.cpp) (libSceAudioOut) - unknown signature
 - [sceAudioOutGetHandleStatusInfo](../../../core/libs/prx/libSceAudioOut/src/Unimplemented.cpp) (libSceAudioOut) - unknown signature
-- [sceAudioOutGetSimulatedHandleStatusInfo2](../../../core/libs/prx/libSceAudioOut/src/Unimplemented.cpp) (libSceAudioOut) - unknown signature
+- [sceAudioOutGetSimulatedHandleStatusInfo and sceAudioOutGetSimulatedHandleStatusInfo2](../../../core/libs/prx/libSceAudioOut/src/Unimplemented.cpp) (libSceAudioOut) return `0x809B00FF` and touch nothing else. Both declarations have no parameters because the signatures are unknown, which is safe for an `int` return that ignores its arguments. The value is the one the first export returned before this entry existed; applying it to the `2` variant assumes that the pair answers the same query and differs only in a handle width, which is unverified
 - [sceAudioOutChangeAppModuleState](../../../core/libs/prx/libSceAudioOut/src/Unimplemented.cpp) (libSceAudioOut) - unknown signature
-- [sceAudioOutGetSimulatedHandleStatusInfo](../../../core/libs/prx/libSceAudioOut/src/Unimplemented.cpp) (libSceAudioOut) - unknown signature
 - [sceAudioOutGetSimulatedBusUsableStatusByBusType](../../../core/libs/prx/libSceAudioOut/src/Unimplemented.cpp) (libSceAudioOut) - unknown signature
 - [sceAudioOutAttachToApplicationByPid](../../../core/libs/prx/libSceAudioOut/src/Unimplemented.cpp) (libSceAudioOut) - unknown signature
 - [sceAudioOutDetachFromApplicationByPid](../../../core/libs/prx/libSceAudioOut/src/Unimplemented.cpp) (libSceAudioOut) - unknown signature
